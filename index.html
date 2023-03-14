@@ -9,17 +9,17 @@
   </head>
   <body>
     <div class="tab-bar">
-      <button class="tab">This Game is Broken</button>
-      <button class="tab">Lost in Time</button>
-      <button class="tab">I've Got Your Back</button>
+      <button class="tab" onclick="openTab(event, 'tgib');">This Game is Broken</button>
+      <button class="tab" onclick="openTab(event, 'lit');">Lost in Time</button>
+      <button class="tab" onclick="openTab(event, 'igyb');">I've Got Your Back</button>
     </div>
-    <div class="tab-content">
+    <div class="tab-content" id="tgib">
       <iframe frameborder="none" src="https://www.khanacademy.org/computer-programming/this-game-is-broken/6556958301929472/embedded"></iframe>
     </div>
-    <div class="tab-content">
+    <div class="tab-content" id="lit">
       <iframe frameborder="none" src="https://www.khanacademy.org/computer-programming/lost-in-time/5099115644239872/embedded"></iframe>
     </div>
-    <div class="tab-content">
+    <div class="tab-content" id="igyb">
       <iframe frameborder="none" src="https://www.khanacademy.org/computer-programming/ive-got-your-back/6372547616096256/embedded"></iframe>
     </div>
     <script src="/tabs/script.js"></script>
